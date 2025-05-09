@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Vazir', sans-serif;
+    background: #0e0e0e;
+    color: white;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+  
+  header {
+    width: 100%;
+    padding: 20px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ff4da6;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff4da6;
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff4da6;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  .home-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #1a1a1a;
+    border: 2px solid #ff4da6;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #ff4da6;
+    text-align: right;
+  }
+  
+  .home-container h1 {
+    text-align: center;
+    color: #ff4da6;
+    margin-bottom: 30px;
+  }
+  
+  .home-container p {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    width: 100%;
+    border-top: 1px solid #444;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer a {
+    color: #ff4da6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+  }
+  
